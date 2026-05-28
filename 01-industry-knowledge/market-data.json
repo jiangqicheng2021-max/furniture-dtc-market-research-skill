@@ -1,0 +1,41 @@
+{
+  "market_metadata": {
+    "region": "United States",
+    "focus_area": "New York Metropolitan Area",
+    "last_updated": "2026-05-28",
+    "currency": "USD"
+  },
+  "market_size_estimates": {
+    "us_total_furniture_market_billions": 280.0,
+    "us_furniture_ecommerce_penetration_percentage": 37.5,
+    "projected_cagr_percentage_2024_2028": 6.2,
+    "nyc_online_furniture_adoption_rate": 45.0
+  },
+  "new_york_market_specifics": {
+    "demographics": {
+      "renter_percentage": 68.2,
+      "average_apartment_sqft": 735,
+      "annual_tenant_turnover_rate": 15.0
+    },
+    "seasonality_peaks": {
+      "highest_peak": "September-October (NYC Move-in Season)",
+      "secondary_peak": "March-May (Spring Renovation)",
+      "promotional_peak": "November-December (Black Friday/Cyber Monday)"
+    }
+  },
+  "unit_economics_benchmarks": {
+    "gross_margin_target_range": {
+      "low_end": 50.0,
+      "high_end": 75.0
+    },
+    "customer_acquisition_cost_cac_usd": {
+      "organic_heavy_baseline": 80.0,
+      "paid_ads_heavy_baseline": 250.0
+    },
+    "return_rate_benchmarks_percentage": {
+      "industry_average": 12.5,
+      "dtc_target_limit": 8.0
+    },
+    "estimated_logistics_cost_ratio": 15.0
+  }
+}
