@@ -1,0 +1,55 @@
+{
+  "database_metadata": {
+    "target": "Dynamic DTC Competitor Intelligence Hub",
+    "status": "Initialized - Awaiting Agent Discovery",
+    "last_updated": "2026-05-28"
+  },
+  "agent_skills_and_protocols": {
+    "discovery_protocol": {
+      "trigger_keywords": [
+        "modular sofa NYC",
+        "sofa in a box New York",
+        "DTC furniture brands 2026",
+        "apartment friendly couch"
+      ],
+      "search_depth_level": "Deep (Serp + Website Crawl + Reddit Sentiment)"
+    },
+    "data_extraction_schema": {
+      "identity": {
+        "brand_name": "STRING (Extract from homepage/about us)",
+        "website_url": "URL",
+        "est_market_positioning": "ENUM [Value, Mid-Market, Premium, Luxury]"
+      },
+      "nyc_logistics_audit": {
+        "shipping_fee_structure": "STRING (Identify hidden fees or flat rates)",
+        "nyc_delivery_time_days": "ARRAY [Min, Max]",
+        "box_dimensions_stated": "BOOLEAN (Does the brand explicitly guarantee fitting narrow hallways/walk-ups?)",
+        "coi_generation_speed": "ENUM [Instant/Automated, On-Request, None/Third-Party]"
+      },
+      "financial_and_pricing_audit": {
+        "entry_sofa_price_usd": "NUMBER (Track their hero product base price)",
+        "premium_sofa_price_usd": "NUMBER",
+        "bnpl_partners": "ARRAY (e.g., Affirm, Klarna, Afterpay)",
+        "return_policy_friction_level": "STRING (Check for return shipping fees or restocking fees)"
+      },
+      "supply_chain_and_compliance_audit": {
+        "country_of_origin": "ARRAY (Where are their products manufactured? e.g., Vietnam, Malaysia, China, USA)",
+        "anti_dumping_risk_level": "ENUM [Low, Medium, High] (Evaluate based on category and country of origin)",
+        "material_compliance": "ARRAY (e.g., CertiPUR-US, FSC Certified Wood, OEKO-TEX)"
+      },
+      "marketing_intel": {
+        "primary_social_channels": "ARRAY (Identify where they push budgets)",
+        "nyc_localization_tactics": "ARRAY (e.g., Subway ads, local showrooms, geo-targeted popups)"
+      }
+    },
+    "analysis_and_scoring_skills": {
+      "calculate_nyc_fit_score": "Formula: (0.35 * Modularity/Packaging) + (0.25 * Logistics/COI Capability) + (0.20 * Supply Chain Margin Resilience) + (0.20 * Pricing/Aesthetics)",
+      "swot_generation_template": {
+        "core_advantage": "What makes them winning in tight NYC apartments?",
+        "fatal_weakness": "Where are NYC customers leaving 1-star reviews? (e.g., package theft, stairs refusal)",
+        "supply_chain_risk": "Are they highly vulnerable to tariff increases or anti-dumping investigations?"
+      }
+    }
+  },
+  "discovered_competitors_pool": []
+}
